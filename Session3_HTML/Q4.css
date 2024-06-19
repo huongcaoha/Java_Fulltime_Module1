@@ -1,0 +1,24 @@
+#form1 {
+    width: 20%;
+    height: 25vh;
+    border: solid 20px rgb(182, 231, 228);
+   
+}
+
+.blue {
+    color: blue ;
+}
+.red {
+    color: red;
+}
+
+#form2 {
+    width: 30%;
+    height: 30vh;
+    border: solid 1px black;
+    padding: 0 10px 10px 10px;
+   
+}
+#div-form2 {
+    background-color: yellow;
+}

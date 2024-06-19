@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <style>
+      table {
+        width: 30%;
+        height: 50vh;
+      }
+
+      .image {
+        width: 200px;
+        height: 180px;
+        margin: 10px;
+        border: solid 1px black;
+        border-radius: 5%;
+      }
+      #image1 {
+        background-image: url("image/orange.png");
+        background-repeat: no-repeat;
+      }
+      #image2 {
+        background-image: url("image/luu.png");
+        background-repeat: no-repeat;
+      }
+      #image3 {
+        background-image: url("image/suplo.png");
+        background-repeat: no-repeat;
+      }
+      #form1 {
+        width: 30%;
+        height: 40vh;
+        border: solid 1px black;
+        text-align: center;
+      }
+      #form2 {
+        width: 20%;
+        height: 40vh;
+        border: solid 1px black;
+        padding: 10px 0 0 150px;
+      }
+      #table-1 tr td {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>My Store</h1>
+      <table border="1" style="border-collapse: collapse">
+        <tr>
+          <th>Item Photo</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="image" id="image1"></div>
+          </td>
+          <td>Oranges</td>
+          <td>$1 ea.</td>
+        </tr>
+        <tr>
+          <td>
+            <div><img src="sadas" alt="." /></div>
+          </td>
+          <td>Bananas</td>
+          <td>$0.75/lb</td>
+        </tr>
+        <tr>
+          <td><div class="image" id="image2"></div></td>
+          <td>Pomegranaters</td>
+          <td>3 for $5</td>
+        </tr>
+        <tr>
+          <td><img src="đasad" alt="." /></td>
+          <td>Gummy Bears</td>
+          <td>$6 per bag</td>
+        </tr>
+        <tr>
+          <td><div class="image" id="image3"></div></td>
+          <td>Broccoli</td>
+          <td>$3 a head</td>
+        </tr>
+      </table>
+    </div>
+    <br /><br />
+    <hr />
+    <h1>bài 2</h1>
+
+    <form action="" method="POST" id="form1">
+      <h2>Booking Form</h2>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" />
+      </div>
+      <br />
+      <div>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <br />
+      <div>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" />
+      </div>
+      <br />
+      <div>
+        <label for="number">Number of Guests:</label>
+        <input type="number" id="number" name="number" />
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+    <hr />
+    <br />
+    <h1>Bài 3</h1>
+    <form action="" method="POST" id="form2">
+      <h2>Car Purchase Form</h2>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" />
+      </div>
+      <br />
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" />
+      </div>
+      <br />
+      <div>
+        <label for="model">Choose a Car:</label>
+        <select name="model" id="model">
+          <option value="model1">Model 1</option>
+          <option value="model2">Model 2</option>
+          <option value="model3">Model 3</option>
+          <option value="model4">Model 4</option>
+          <option value="model5">Model 5</option>
+        </select>
+      </div>
+
+      <br />
+      <div>
+        <label for="color">Choose a Color:</label>
+        <select name="color" id="color">
+          <option value="red">Red</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+          <option value="red">Red</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" />
+      </div>
+      <br />
+      <div>
+        <label for="date">Delivery Date:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <br /><br />
+    <hr />
+    <br />
+    <h1>Bài 4</h1>
+    <table border="1" style="border-collapse: collapse" id="table-1">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>G</td>
+      </tr>
+      <tr>
+        <td>H</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>N</td>
+      </tr>
+      <tr>
+        <td>O</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>U</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>

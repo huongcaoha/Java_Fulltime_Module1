@@ -1,0 +1,15 @@
+
+form {
+    padding-left: 1%;
+    width: 30%;
+    height: 100vh;
+    border: solid 1px black;
+    margin-left: 35%;
+}
+button {
+    margin-left: 80%;
+    height: 30px;
+    width: 100px;
+    color: white;
+    background-color: blue;
+}

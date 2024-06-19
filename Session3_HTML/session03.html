@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./session3.css" />
+  </head>
+  <body>
+    <form action="" method="GET">
+      <h1>COLLEGE ADMISSION FORM</h1>
+      <h3>Enter your admission information below</h3>
+      <hr />
+      <div>
+        <label for="name">Name</label><br />
+        <table>
+          <tr style="border: solid 1px black">
+            <th><input type="text" id="firstname" name="firstname" /></th>
+            <th><input type="text" id="midname" name="midname" /></th>
+            <th><input type="text" id="lastname" name="lastname" /></th>
+          </tr>
+          <tr style="font-size: 10px">
+            <td>First Name</td>
+            <td>Middle Inlitial</td>
+            <td>Last Name</td>
+          </tr>
+        </table>
+      </div>
+      <br />
+
+      <div>
+        <label for="">Birth Date</label><br />
+        <table>
+          <tr style="border: solid 1px black">
+            <th>
+              <select name="month" id="month">
+                <option value="0">Please enter a month</option>
+                <script>
+                  var month = document.querySelector("#month");
+
+                  for (var i = 1; i <= 12; i++) {
+                    month.innerHTML += ` <option value="${i}">${i}</option>`;
+                  }
+                </script>
+              </select>
+            </th>
+            <th>
+              <select name="day" id="day">
+                <option value="0">Please select a day</option>
+                <script>
+                  var day = document.querySelector("#day");
+
+                  for (var i = 1; i <= 31; i++) {
+                    day.innerHTML += ` <option value="${i}">${i}</option>`;
+                  }
+                </script>
+              </select>
+            </th>
+            <th>
+              <select name="year" id="year">
+                <option value="0">Please select a year</option>
+                <script>
+                  var year = document.querySelector("#year");
+
+                  for (var i = 1900; i <= 2024; i++) {
+                    year.innerHTML += ` <option value="${i}">${i}</option>`;
+                  }
+                </script>
+              </select>
+            </th>
+          </tr>
+          <tr style="font-size: 10px">
+            <td>Month</td>
+            <td>Day</td>
+            <td>Year</td>
+          </tr>
+        </table>
+        <br />
+
+        <b style="margin-right: 18%">Gender</b>
+        <b>Of which country are you a citizen?</b>
+        <div>
+          <input type="radio" id="male" name="gender" />
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" />
+          <label for="female">Female</label>
+
+          <select
+            name="country"
+            id="country"
+            style="margin-left: 5%; width: 30%"
+          >
+            <option value="">Please Select</option>
+            <option value="Việt Nam">Việt Nam</option>
+            <option value="Mỹ">Mỹ</option>
+            <option value="Trung Quốc">Trung Quốc</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br />
+
+        <table>
+          <tr>
+            <td>Phone</td>
+            <td>E-mail Address</td>
+          </tr>
+          <tr>
+            <td><input type="tel" id="phone" name="phone" /></td>
+            <td><input type="email" id="email" name="email" /></td>
+          </tr>
+        </table>
+      </div>
+      <br />
+      <table>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><h4>Mailing Address</h4></td>
+        </tr>
+        <tr>
+          <td colspan="4"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Street Address</td>
+        </tr>
+        <tr>
+          <td colspan="4"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Street Address line 2</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="2"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">City</td>
+          <td colspan="2">State/Province</td>
+        </tr>
+        <tr>
+          <td colspan="4"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td colspan="4">Postal / Zip Code</td>
+        </tr>
+        <tr>
+          <td colspan="2">Emergency Contact</td>
+          <td colspan="2">Relationship</td>
+        </tr>
+        <tr>
+          <td><input type="text" /></td>
+          <td><input type="text" /></td>
+          <td colspan="2"><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2">Email</td>
+          <td colspan="2">Phone</td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="text" /></td>
+          <td colspan="2"><input type="number" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">example@gmail.com</td>
+          <td colspan="2">Plwase enter a valid phone number</td>
+        </tr>
+        <tr>
+          <td colspan="4">Do you speak any languages other than English?</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="radio" id="speak-yes" name="speak" />
+            <label for="speak-yes">Yes</label>
+          </td>
+          <td colspan="2">
+            <input type="radio" id="speak-no" name="speak" />
+            <label for="speak-no">No</label>
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <button>Next</button>
+    </form>
+  </body>
+</html>

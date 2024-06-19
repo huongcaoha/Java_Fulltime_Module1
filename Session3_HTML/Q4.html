@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./Q4.css" />
+  </head>
+  <body>
+    <h1>Phần 1</h1>
+    <form action="" method="POST" id="form1">
+      <h2 style="background-color: red; text-align: center">
+        SỞ THÍCH CỦA BẠN
+      </h2>
+
+      <div>
+        <label for="yourname" class="blue">Họ và tên</label>
+        <input type="text" id="yourname" name="yourname" />
+      </div>
+      <br />
+      <div>
+        <label for="email" class="blue">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <table>
+        <tr>
+          <td class="blue">Sở thích</td>
+          <td>
+            <input type="checkbox" id="film" name="film" />
+            <label for="film" class="red">Xem phim</label>
+          </td>
+          <td>
+            <input type="checkbox" id="soccer" name="soccer" />
+            <label for="soccer" class="red">Đá bóng</label>
+          </td>
+          <td>
+            <input type="checkbox" id="readbook" name="readbook" />
+            <label for="readbook" class="red">Đọc sách</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="checkbox" id="music" name="music" />
+            <label for="music" class="red">Nghe nhạc</label>
+          </td>
+          <td>
+            <input type="checkbox" id="playgame" name="playgame" />
+            <label for="playgamee" class="red">Chơi game</label>
+          </td>
+          <td>
+            <input type="checkbox" id="learn" name="learn" />
+            <label for="learn" class="red">Học bài</label>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="checkbox" id="eatdrink" name="eatdrink" />
+            <label for="eatdrink" class="red">Ăn uống</label>
+          </td>
+
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Gửi thông tin" /></td>
+          <td><input type="reset" value="Nhập lại" /></td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+
+    <h1>Phần 2</h1>
+    <form action="" method="POST" id="form2">
+        <div id="div-form2">
+            <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+            <table >
+              <tr>
+                <td><label for="fullname">Họ và tên</label></td>
+                <td>
+                  <input type="text" id="fullname" name="fulname" />
+                  <td></td>
+                </td>
+              </tr>
+      
+              <tr>
+                <td><label for="dob">Ngày sinh</label></td>
+                <td><input type="date" id="dob" name="dob" /></td>
+              </tr>
+      
+              <tr>
+                  <td><label for="gender">Giới tính</label></td>
+                  <td>
+                      <input type="radio" id="male" name="gender">
+                      <label for="male">Name</label>
+                      <input type="radio" id="female" name="gender">
+                      <label for="female">Nữ</label>
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td><label for="address">Địa chỉ</label></td>
+                  <td><textarea name="address" id="address"></textarea></td>
+              </tr>
+      
+              <tr>
+                  <td><label for="classname">Lớp</label></td>
+                  <td>
+                      <select name="classname" id="classname">
+                          <option value="">--Chọn lớp--</option>
+                          <option value="morning">Sáng</option>
+                          <option value="lunch">Trưa</option>
+                          <option value="night">Tối</option>
+                      </select>
+                  </td>
+              </tr>
+      
+              <tr>
+                  <td><label for="email">Email</label></td>
+                  <td><input type="email" id="email" name="email"></td>
+              </tr>
+      
+              <tr>
+                  <td><label for="phone">Điện thoại</label></td>
+                  <td><input type="tel" id="phone" name="phone"></td>
+              </tr>
+      
+              <tr>
+                  <td></td>
+                  <td>
+                      <input type="submit" value="Đăng ký">
+                      <input type="reset" value="Nhập lại">
+                  </td>
+              </tr>
+            </table>
+        </div>
+    </form>
+  </body>
+</html>

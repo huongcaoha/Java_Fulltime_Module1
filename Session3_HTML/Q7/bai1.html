@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <style>
+      .box1 {
+        border: 2px solid #000;
+        padding: 20px;
+        position: relative;
+      }
+
+      .box1:before {
+        content: "Thông tin sản phẩm";
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background-color: white;
+      }
+      .box2 {
+        border: 2px solid #000;
+        padding: 20px;
+        position: relative;
+      }
+
+      .box2:before {
+        content: "Thông tin giao hàng";
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background-color: white;
+      }
+      .box3 {
+        border: 2px solid #000;
+        padding: 20px;
+        position: relative;
+      }
+
+      .box3:before {
+        content: "Thông tin thanh toán";
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      action=""
+      method=""
+      style="width: 90%; height: 30vh; border: solid 1px black; padding: 10px"
+    >
+      <div class="box1">
+        <label for="nameproduct">Tên sản phẩm</label>
+        <input type="text" id="nameproduct" name="nameproduct" />
+        <label for="quantity">Số lượng</label>
+        <input type="number" id="quantity" name="quantity" />
+      </div>
+      <br />
+      <div class="box2">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="fullname" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <label for="phone">Số điện thoại</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="address">Địa chỉ</label>
+        <input type="text" id="address" name="address" />
+      </div>
+      <br />
+      <div class="box3">
+        <label for="pay">Phương thức thanh toán</label>
+        <select name="pay" id="pay">
+          <option value="cash">Thanh toán khi nhận hàng</option>
+          <option value="card">Thanh toán online</option>
+        </select>
+      </div>
+      <br />
+      <input type="submit" value="Đặt hàng" />
+    </form>
+  </body>
+</html>
