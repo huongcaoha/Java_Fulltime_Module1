@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        width: 50%;
+        height: 70vh;
+        border: 1px solid black;
+        background-color: rgb(245, 245, 245);
+
+        margin: 5% auto;
+      }
+      form {
+        margin: 0 auto;
+        width: 80%;
+        height: 57vh;
+        border: 1px solid black;
+        background-color: white;
+        padding: 10px;
+        font-size: 25px;
+        color: rgb(169, 154, 152);
+      }
+      form input {
+        color: rgb(169, 154, 152);
+        width: 100%;
+        height: 5vh;
+      }
+      h1 {
+        text-align: center;
+        font-size: 60px;
+      }
+      textarea {
+        width: 100%;
+        height: 10vh;
+      }
+      button {
+        width: 10%;
+        height: 5vh;
+        background-color: rgb(51, 51, 51);
+        color: white;
+        font-size: 25px;
+        border-radius: 5%;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <br />
+      <h1>Tuyển dụng</h1>
+      <br />
+      <form action="" method="">
+        <label for="fullname">Họ và tên :</label>
+        <input type="text" id="fullname" name="fullname" />
+        <br />
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" />
+        <br />
+        <label for="phone">Số điện thoại :</label>
+        <input type="tel" id="phone" name="phone" />
+        <br />
+        <label for="cv">CV :</label>
+        <input type="file" id="cv" name="cv" />
+        <br /><br />
+        <label for="message">Tin nhắn :</label>
+        <br />
+        <textarea name="message" id="message"></textarea>
+        <br />
+        <button>Gửi</button>
+      </form>
+    </div>
+  </body>
+</html>
