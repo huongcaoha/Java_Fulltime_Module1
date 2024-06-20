@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 20%;
+    height: 80vh;
+    border: 1px solid black;
+    margin: 5% auto;
+}
+.form {
+    width: 90%;
+    height: 90%;
+    
+    margin: 5% 5%;
+    background-color: rgb(247, 248, 250);
+}
+.sub-form {
+    width: 90%;
+    height: 90%;
+    background-color:white;
+   margin:  auto;
+   margin-top: auto auto;
+   
+}
+div p {
+    margin-bottom: 10%;
+}
+.div-div-p {
+    display: flex;
+}
+.div-p {
+    margin-right: 70%;
+}
