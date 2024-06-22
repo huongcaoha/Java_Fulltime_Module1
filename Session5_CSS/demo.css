@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    background-color: rgb(240, 235, 235);
+    display: flex;
+    font-size: 25px;
+}
+.logo {
+    width: 10%;
+    height: 80%;
+    margin: auto 5%;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    margin: 0 auto;
+    line-height: 10vh;
+}
+.navbar li {  
+    margin-left: 10vmin;
+}
+#login {
+    margin-left: 20vmax;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+   color: brown;
+}
+.slide {
+    width: 100%;
+    height: 50vh;
+}
+#slide {
+    padding-top: 10vh;
+}
+.search {
+   
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    margin: 1% 30%;
+}
+#search {
+    width: 30%;
+    height: 3vh;
+    margin-right: 5%;
+}
+#btn-search {
+    width: 5%;
+    height: 3vh;
+
+}
+.section {
+    width: 100% ;
+    height: 100vh;
+    display: flex;
+  
+}
+.sub-nav {
+    list-style-type: none;
+}
+.sub-nav li {
+    margin-top: 10%;
+}
+.section1 {
+    width: 25%;
+   
+    background-color: bisque;
+    padding: 3%;
+    font-size: 20px;
+}
+.section2 {
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item {
+    width: 20%;
+    height: 20vh;
+    border: 1px solid;
+    margin-bottom: 10%;
+    margin-left: 4%;
+}
+.item img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+.navigation {
+    display: flex;
+    font-size: 25px;
+}
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+}
+.navigation ul li {
+    margin-left: 15%;
+}
+footer {
+    width: 100%;
+    height: 10vh;
+    margin-top: 4vh;
+    text-align: center;
+}

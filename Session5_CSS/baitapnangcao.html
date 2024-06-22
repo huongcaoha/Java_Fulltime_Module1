@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./baitapnangcao.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <form action="" method="POSST">
+      <div class="container">
+        <div class="sub-container">
+          <h2>Billing address</h2>
+
+          <table style="width: 100%">
+            <tr>
+              <td><label for="Firstname">Firstname</label></td>
+              <td><label for="Lastname">Lastname</label></td>
+            </tr>
+
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  id="Firstname"
+                  name="Firstname"
+                  class="td-table1"
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="Lastname"
+                  name="Lastname"
+                  class="td-table1"
+                />
+              </td>
+            </tr>
+          </table>
+
+          <div>
+            <br />
+            <label for="username">Username</label><br />
+            <div class="sub-div">
+              <i class="fa-solid fa-user"></i>
+              <input class="input" type="text" id="username" name="username" />
+            </div>
+            <br />
+            <label for="email">Email(optional)</label><br />
+            <div class="sub-div">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="you@example.com"
+              />
+            </div>
+            <br />
+
+            <label for="address">Address</label><br />
+            <div class="sub-div">
+              <input
+                class="input"
+                type="text"
+                id="address"
+                name="address"
+                placeholder="1234 Main .St"
+              />
+            </div>
+            <br />
+
+            <table class="table2">
+              <tr>
+                <td><label for="country">Country</label></td>
+                <td><label for="state">State</label></td>
+                <td><label for="zip">Zip</label></td>
+              </tr>
+              <tr>
+                <td class="td">
+                  <select name="country" id="country">
+                    <option value="">Choose...</option>
+                  </select>
+                </td>
+                <td class="td">
+                  <select name="state" id="state">
+                    <option value="">Choose...</option>
+                  </select>
+                </td>
+                <td class="td">
+                  <input type="number" id="zip" name="zip" class="td-table2" />
+                </td>
+              </tr>
+            </table>
+            <br />
+            <input type="checkbox" id="shipping" name="shipping" />
+            <label for="shipping"
+              >Shipping address is the same as my billing address</label
+            >
+            <br />
+            <input type="checkbox" name="save" id="save" />
+            <label for="save">Save this information for next time</label>
+            <br />
+            <br />
+            <hr />
+            <br />
+            <h2>Payment</h2>
+            <br />
+            <input type="radio" name="payment" id="credit" />
+            <label for="credit">Credit card</label>
+            <br />
+
+            <input type="radio" name="payment" id="debit" />
+            <label for="debit">Debit card</label>
+            <br />
+
+            <input type="radio" name="payment" id="paypal" />
+            <label for="paypal">PayPal</label>
+            <br />
+            <br />
+            <table class="table3">
+              <tr>
+                <td colspan="2"><label for="nameCard">Name on card</label></td>
+                <td colspan="2">
+                  <label for="numberCard">Credit card number</label>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input
+                    type="text"
+                    name="nameCard"
+                    id="nameCard"
+                    class="td-table3"
+                  />
+                </td>
+                <td colspan="2">
+                  <input
+                    type="number"
+                    name="numberCard"
+                    id="numberCard"
+                    class="td-table3"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Full name as displayed on card</td>
+              </tr>
+              <tr>
+                <td><label for="expriation">Expriation</label></td>
+                <td><label for="cvv">CVV</label></td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="expriation"
+                    id="expriation"
+                    class="td-table3"
+                  />
+                </td>
+                <td>
+                  <input type="number" name="cvv" id="cvv" class="td-table3" />
+                </td>
+              </tr>
+            </table>
+            <br />
+            <hr />
+            <br />
+            <button>Continue to checkout</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

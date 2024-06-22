@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bai8.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <div class="sub1">
+          <h1>Modal 1</h1>
+          <h1 class="x">X</h1>
+        </div>
+
+        <div class="sub2">
+          <h2>Show a second modal and hide this one with the button below.</h2>
+        </div>
+
+        <div class="sub3">
+          <button id="button1">Open second modal</button>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="sub1">
+          <h1>Modal 2</h1>
+          <h1 class="x">X</h1>
+        </div>
+
+        <div class="sub2">
+          <h2>Show a first modal and hide this one with the button below.</h2>
+        </div>
+
+        <div class="sub3">
+          <button id="button2">Open first modal</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var container1 = document.querySelector(".container1");
+    var container2 = document.querySelector(".container2");
+    var button1 = document.querySelector("#button1");
+    var button2 = document.querySelector("#button2");
+    button1.onclick = function () {
+      container1.style.display = "none";
+      container2.style.display = "block";
+    };
+    button2.onclick = function () {
+      container1.style.display = "block";
+      container2.style.display = "none";
+    };
+  </script>
+</html>
