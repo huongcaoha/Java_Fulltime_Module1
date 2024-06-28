@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Cabin", sans-serif;
 }
+body {
+   position: relative;
+}
 
 li {
     list-style-type: none;
@@ -482,6 +485,71 @@ footer .text-end {
 }
 p {
    row-gap: 20px;
+}
+.hotline {
+   position: fixed;
+   bottom: 20px;
+   left: 20px;
+}
+.hotline .sub-hotline {
+   display: flex;
+   flex-direction: column;
+   gap : 20px
+}
+.hotline .sub-hotline div {
+   display: flex;
+}
+.hotline .sub-hotline div > i {
+   width: 50px;
+   
+   font-size: 50px;
+   border-radius: 50%;
+   animation: hotline 0.5s infinite linear backwards;
+   background-color: white;
+   border: 1px solid rgb(197, 193, 193);
+}
+.hotline .sub-hotline div > img {
+   width: 50px;
+   
+   font-size: 50px;
+   border-radius: 50%;
+   animation: hotline 0.5s infinite linear backwards;
+   background-color: white;
+   border: 1px solid rgb(197, 193, 193);
+}
+.hotline .sub-hotline div > i , img:hover {
+
+}
+.hotline .sub-hotline div .hotline-text {
+   height: 50px;
+   display: none;
+   border: 1px solid white;
+   background-color: #ff6a00;
+   padding: 0 30px;
+   line-height: 50px;
+   border-top-right-radius: 20% 40px;
+   border-bottom-right-radius: 20% 40px;
+   border-top-left-radius: 20% 40px;
+   border-bottom-left-radius: 20% 40px;
+   margin-left: -25px;
+   
+}
+@keyframes opacity {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+@keyframes hotline {
+   from {
+      transform: scale(0.8);
+     
+   }
+   to {
+      transform: rotate(30deg);
+   }
 }
  @keyframes hover-event-image {
    to {
