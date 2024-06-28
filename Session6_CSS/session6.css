@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+}
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: orangered;
+    position: sticky;
+    line-height: 10vh;
+    top: 0;
+    z-index: 1;
+}
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+header ul:last-child {
+    color: white;
+    margin-left: 20%;
+}
+header ul:first-child {
+    margin-left: 15%;
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 30px;
+}
+main {
+    width: 100%;
+   border-top: 1px solid black;
+    display: flex;
+    margin-top: 5vh;
+}
+.sectionLeft {
+    flex: 1;
+    background-color: antiquewhite;
+
+}
+.content {
+    flex: 3;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.sectionRight {
+    display: flex;
+    flex: 1;
+    background-color: antiquewhite;
+    position: relative;
+}
+.circle {
+    width: 25vh;
+    height: 25vh;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: fixed;
+    margin-left: 5%;
+}
+header ul:first-child:before {
+    content: "before";
+    color: blueviolet;
+}
+header ul:first-child:after {
+    content: "after";
+    color: aqua;
+}
+.hour {
+    position: absolute;
+    width: 1%;
+    height: 40%;
+    background-color: blue;
+    color: red;
+    text-align: center;
+    padding-top: 2%;
+    top : 50% ;
+    left: 50%;
+    animation: spinaround 7200s infinite linear;
+    transform-origin: top;
+}
+
+.second {
+    position:absolute;
+    width: 1%;
+    height: 40%;
+    background-color: rgb(255, 0, 0);
+    color: red;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    padding-top: 2%;
+   
+    animation: spinaround 10s infinite linear;
+    transform-origin: top;
+}
+.item {
+    width: 20%;
+    height: 25%;
+    position: relative;
+    border: 1px solid black;
+    margin-left: 2%;
+    margin-top: 2vh;
+    transition: background-color 1s linear;
+    
+}
+.item:hover{
+   /* animation: zoomhover 1s linear forwards; */
+  /* animation: moveRight500 1s 1 linear forwards; */
+  /* animation: displayBlock 1s 1 linear forwards; */
+  background-color: pink;
+  .buy {
+    display: block;
+  }
+}
+.discount {
+    position: absolute;
+    background-color: pink;
+    color: red ;
+    top : 0 ;
+    right: 0;
+    
+}
+.like {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    
+}
+img {
+    width: 100%;
+    height: 60%;
+
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+}
+.price {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    color: red;
+}
+.selling {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.sale {
+    background-color: orange;
+    color: white;
+    margin-left: 10px;
+    
+    border: 0.5px dashed black;
+    
+}
+.buy {
+    background-color: red;
+    color: white;
+    position: absolute;
+    bottom: 16%;
+    left: 0;
+    width: 100%;
+    height: 3vh;
+    font-size: 20px;
+    display: none;
+    transition: display 1s linear;
+}
+
+@keyframes zoomhover {
+    to {
+        transform: scale(1.2);
+        z-index: 3;
+        background-color: rgb(222, 140, 192);
+        
+    }
+}
+@keyframes spinaround {
+   to {
+    transform: rotate(360deg);
+   }
+}
+@keyframes moveRight500 {
+   to {
+    background-color: pink;
+   }
+}
+@keyframes displayBlock {
+    to {
+    
+            display: block;
+        
+    }
+}
+@media (max-width :800px){
+    .item {
+        width: 30%;
+    }
+    .description {
+        display: none;
+    }
+    .selling {
+        display: none;
+    }
+}

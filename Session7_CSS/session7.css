@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .post-container {
+    width: 35%;
+    
+}
+.post-container img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.post-container h2 {
+    margin-bottom: 10px;
+}
+.text-align-section {
+    font-size: 18px;
+    padding: 1%;
+}
+.text-align-section h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.text-align-section  p span {
+    color: red;
+}
+.text-align-section .demo {
+    border: 5px solid rgb(4, 125, 0);
+    text-align: center;
+    padding: 10px;
+   
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.text-align-section .example-wrapper {
+    background-color: rgb(228, 232, 236);
+    margin-top: 30px;
+    padding: 1%;
+}
+.text-align-section .example-wrapper h3 {
+    
+    margin-left: 5%;
+}
+.text-align-section .example-wrapper .code-demo {
+    background-color: #fff;
+    border-left: 3px solid rgb(4, 125, 0);
+    width: 90%;
+    margin: 0 auto;
+    
+} */
+ /* .modal-container {
+    width: 50%;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 3px;
+    text-align: center;
+    margin: 10% auto;
+ }
+ .modal-container div {
+    padding: 10px 0;
+ }
+ .modal-container .modal-top {
+    width: 100%;
+    border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(247, 247, 247);
+ }
+ .modal-container .modal-bottom {
+    width: 100%;
+    border: 1px solid rgb(223, 223, 223);
+    background-color: rgb(247, 247, 247);
+ }
+ .modal-container .modal-mid button {
+    margin: 10px auto;
+    width: 15%;
+    height: 4vh;
+    background-color: rgb(11, 108, 254);
+    color: white;
+    border: none;
+    border-radius: 5px;
+ }
+ .modal-container .modal-mid p {
+    margin: 10px 0;
+ } */
+  .post-container {
+    width: 30%;
+    position: relative;
+  }
+.post-container img{
+    width: 100%;
+    
+}
+.post-container .title-container {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background-color: #00000091;
+    font-size: 25px;
+}
+.post-container button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 50px;
+    border-radius: 5px;
+    background-color:rgb(187, 64, 57);
+    font-size: 25px;
+}

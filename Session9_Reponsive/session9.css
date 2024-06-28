@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* header srart css */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 1px solid rgb(216, 212, 212);
+    box-shadow: 0px 5px 12px -6px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 0px 5px 12px -6px rgba(0,0,0,0.65);
+}
+nav .nav-first {
+    flex: 1;
+}
+nav .nav-mid {
+   width: 50%;
+    display: flex;
+    list-style-type: none;
+    gap:6%;
+    flex: 1.5;
+}
+nav .nav-first img {
+    width: 150px;
+}
+nav .nav-end {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+   
+}
+nav .nav-end .language {
+    background-color: #f8f7fa;
+    padding: 7px 15px;
+}
+.reponsive-nav {
+    display: none;
+}
+
+/* header end css */
+.section-hero {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-image: url(https://rikkei.edu.vn/wp-content/uploads/2024/01/bg-home1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  
+}
+.section-hero .section-right img{
+    width: 600px;
+}
+.section-hero .section-left {
+    font-size: 1.2em;
+   
+}
+.section-hero .section-left div {
+    margin: 20px 0;
+}
+.section-hero .section-left div ul li{
+    margin: 10px 0;
+    background-image: url(https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154-child-theme/image/icon-check.png);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+ .button1 {
+    width: 100px;
+    height: 35px;
+    background-color: #bc2228;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+ .button2 {
+    width: 130px;
+    height: 35px;
+    border: 1px solid #c1bcd1;
+    border-radius: 5px;
+    background-color: transparent;
+}
+ .button2:hover {
+    background-color: #bc2228;
+    color: white;
+    transition: color 1s;
+}
+.section-style {
+    padding: 10px 13%;
+}
+main .target {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: -70px;
+    position: absolute;
+    left: 13%;
+}
+ main .target div {
+    width: 330px;
+    height: 140px;
+    padding: 10px;
+    background-color:#fff;
+    border: 1px solid #c1bcd1;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ main .target div:hover {
+   animation: hover-target 0.2s 1 linear forwards;
+ }
+ main .target div h2 {
+    color: #c22228;
+ }
+ main .section-dream {
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    gap:50px ;
+    font-size: 18px;
+    background-color: #f8f7fa;
+    padding: 160px 13%;
+ }
+ main .section-dream .dream-text h2 {
+    color: #bc2228;
+    margin-bottom: 20px;
+ }
+ .advantage {
+    padding: 80px 13%;
+ }
+ .advantage h2 {
+    color: #c02228;
+ }
+ .advantage .advantage-button {
+    text-align: center;
+    margin: 15px 0;
+   
+ }
+ .advantage .advantage-button .button1 {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+ }
+ .advantage .advantage-button .button2 {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+ }
+ .advantage .sub-advantage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+
+ }
+ .advantage .sub-advantage div {
+   padding: 35px 20px;
+ }
+ .advantage .sub-advantage div h3 {
+    color: #c02228;
+ }
+ .advantage .sub-advantage div img {
+    width: 40px;
+    margin: 10px 0;
+ }
+ .method {
+    background-color: #f8f7fa;
+    padding: 100px 13%;
+ }
+ .method .detail-method {
+    display: flex;
+    justify-content: center;
+    gap : 20px;
+ }
+ .method .detail-method div {
+    width: 430px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid rgb(239, 236, 236);
+    margin: 40px 0 ;
+    padding: 25px;
+    border-radius: 7px;
+
+ }
+ .method .detail-method div iframe {
+    width: 200%;
+ }
+ .method  h2 {
+    font-size: 25px;
+    color: #bc222f;
+ }
+ .method .detail-method div h3 {
+    font-size: 22px;
+    
+ }
+ .method .detail-method div p {
+    background-image: url(https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154-child-theme/image/icon-check1.png);
+    background-repeat: no-repeat;
+    margin: 15px 0;
+    padding-left: 30px;
+    height: 30px;
+ }
+ .method .method-button {
+    text-align: center;
+ }
+ .method .method-button .button1 {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+ }
+ .method .method-button .button2 {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+ }
+ .story {
+    padding: 80px 13%;
+ }
+
+ .story .story-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap : 30px ;
+    
+ }
+ .story .story-content div {
+    width: 43%;
+    margin: 15px 0;
+ }
+ .story .story-content div h3 {
+   color: #231651;
+   font-size: 22px;
+ }
+ .story .story-content div button {
+   width: 50%;
+   height: 3vh;
+   margin-left: 20px;
+   font-weight: 900;
+   color: #231651 ;
+   font-size: 15px;
+ }
+ .story .story-content div h2 {
+    font-size: 30px;
+    color: #bc2228;
+ }
+ .ceo {
+   
+    display: flex;
+    justify-content: space-between;
+   padding: 30px 5%;
+ }
+ .ceo div {
+    width: 23%;
+    height: 500px;
+    border: 1px solid#c1bcd1;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #231651;
+
+ }
+ .ceo div img {
+    width: 95%;
+    border: 1px solid rgb(240, 239, 239);
+    border-radius: 5px;
+ }
+ .ceo div button {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid#c1bcd1;
+    font-size: 17px;
+    margin: 10px 0 ;
+ }
+ .ceo div .button-end {
+    width: 130px;
+ }
+ .ceo div img-end {
+    width: 95%;
+    height: 70px;
+ }
+ .ceo div:hover {
+   animation: hover-ceo 0.2s 1 linear forwards;
+   
+    /* background-color: #231651;
+    color: #fff ; 
+     margin-top: -20px; */
+ }
+ .form {
+   display: flex;
+   justify-content: space-between;
+   padding: 50px 16.5%;
+   background-image: url(https://rikkei.edu.vn/wp-content/uploads/2024/01/bg-contact.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   
+ }
+ .form .form-left p {
+   padding: 10px 0;
+ }
+ .form .form-left .div1 {
+   background-color:  #a81e24;
+   width: 75%;
+   font-size: 20px;
+   color: white;
+   padding: 8px;
+   margin-bottom:  15px;
+   margin-top: 50px;
+ }
+ .form .form-left .div2 {
+  
+   width: 75%;
+   font-size: 20px;
+   color: white;
+   
+   margin-bottom: 15px;
+ }
+ .form .form-left .time {
+   margin: 40px 40px;
+   width: 40%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 0 10px;
+   font-size: 20px;
+   color: white;
+ }
+ .form .form-left .time-string {
+   font-size: 16px;
+ }
+ .form .form-right {
+   background-color: white;
+   width: 50%;
+   height: 44vh;
+   border-radius: 5px;
+   display: flex;
+   color: #4d5668;
+   padding: 28px;
+   font-size: 20px;
+   color: #382551;
+   
+ }
+ .form .form-right input , select , button {
+   margin: 7px 0;
+   width: 127%;
+   height: 4vh;
+   border-radius: 5px;
+   border:1px solid #dddddd;
+ }
+ .form .form-right .button {
+   background-color: #a81e24;
+   color: white;
+   font-size: 17px;
+   
+ }
+ .event {
+   padding: 90px 16%;
+   background-color: #f8f7fa;
+ }
+ .event h2 {
+   font-size: 30px;
+   color: #bc2228;
+ }
+ .event .event-image {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+
+ }
+ .event-image .item {
+  width: 31.5%;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   margin-top: 50px ;
+   border: 1px solid #eeedef;
+   border-radius: 5px;
+   padding: 10px 0;
+   background-color: #fff;
+   font-size: 18px;
+ }
+
+ 
+
+ .event-image > .item > .sub-item  {
+   width: 93%;
+   height: 24vh;
+   background-color: #fff;
+   color: #120327;
+   overflow: hidden;
+   margin-bottom: 10px;
+ }
+ .event-image > .item > .sub-item > a {
+   width: 100%;
+   height: 24vh;
+ }
+  .event-image > .item > .sub-item > a > img{
+   width: 100%;
+   height: 24vh;
+   border-radius: 5px;
+   border: 1px solid rgb(213, 204, 204);
+   margin-bottom: 13px;
+   overflow: hidden;
+ }
+ .event-image > .item:hover  img {
+   animation: hover-event-image 1s 1 linear forwards;
+   
+ }
+footer {
+   display: flex;
+   flex-direction: column;
+   background-color: #bc2228;
+   padding: 40px 100px;
+   color: #f1f1f1;
+   font-size: 15px;
+}
+.footter-top {
+   display: grid;
+   grid-template-columns: 2fr 1fr 1fr 1fr;
+   gap: 50px;
+   padding-bottom: 30px;
+   margin-bottom: 50px;
+   border-bottom: 1px solid white;
+   
+}
+.footter-top > div > div > i {
+   font-size: 25px;
+   margin-right: 10px;
+}
+.footter-top > div > ul > li {
+   margin: 15px 0;
+}
+.footter-top > div > div > img  {
+   width: 220px;
+   margin-bottom: 20px;
+   
+}
+.footter-bottom {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 50px 50px;
+   justify-content: space-between;
+}
+footer .text-end {
+   text-align: center;
+   margin-top: 80px;
+   margin-bottom: -20px;
+   font-size: 13px;
+}
+.footter-bottom > div {
+   width: 27%;
+   row-gap: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.footter-bottom > div > p > i  {
+  
+  margin-right: 8px;
+}
+.footter-bottom > div > p {
+   row-gap: 10px;
+}
+p {
+   row-gap: 20px;
+}
+ @keyframes hover-event-image {
+   to {
+         transform: scale(1.2);
+   }
+ }
+@keyframes hover-ceo {
+    to {
+    background-color: #231651;
+    color: rgb(246, 244, 244); 
+      margin-top: -20px;
+    }
+}
+@keyframes hover-target {
+   to {
+      margin-top: -20px;
+   }
+}
+@media (max-width:960px){
+    nav {
+        display: none;
+    }
+    .reponsive-nav {
+        display: block;
+    }
+    .humberger-menu {
+        font-size: 35px;
+        margin-top : -50px;
+    }
+    .section-hero .section-right img{
+        width: 300px;
+    }
+    .section-hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .target {
+
+        flex-wrap: wrap;
+    } 
+}
+
+@media (max-width : 1200px){
+    nav {
+        padding: 10px 10px;
+    }
+    .section-style {
+        padding: 10px 10px;
+    }
+    .section-hero .section-right img{
+        width: 450px;
+    }
+}
+@media (max-width : 500px){
+    .section-hero .section-right img{
+        width: 300px;
+    }
+}

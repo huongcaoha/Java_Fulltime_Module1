@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./session6.css" />
+    <script src="./session6.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li id="cart"><a href="#">Cart</a></li>
+      </ul>
+      <div class="displayCart">
+        <script>
+          var cart = document.querySelector("#cart");
+          var displayCart = document.querySelector(".displayCart");
+          cart.addEventListener("click", function () {
+            displayCart.style.display = "block";
+          });
+          var cartsJson;
+          var carts;
+          if (localStorage.getItem("carts")) {
+            cartsJSON = localStorage.getItem("carts");
+            carts = JSON.parse(cartsJSON);
+          }
+          for (var id of carts) {
+            var product;
+            var products;
+            if (localStorage.getItem("products")) {
+              var productsJson = localStorage.getItem("products");
+              products = JSON.parse(productsJson);
+            }
+            for (var item of products) {
+              if (item.id == id) {
+                product = item;
+              }
+            }
+            displayCart.innerHTML += `<div class="item">
+          <img src="./image/item1.png" alt="" />
+          <p class="description">${product.description}</p>
+          <p class="price">$${product.price}</p>
+          <p class="selling">${product.selling}</p>
+          <b class="sale">${product.sale}</b>
+          <p class="discount">${product.discount}</p>
+          <p class="like">${product.like}</p>
+          <button id="${product.id}" class="buy">${product.buy}</button>
+        </div>`;
+          }
+        </script>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <div class="sectionLeft"></div>
+
+      <div class="content">
+        <script>
+          var tagContent = document.querySelector(".content");
+          var productsJson = localStorage.getItem("products");
+          var products = JSON.parse(productsJson);
+          for (var product of products) {
+            tagContent.innerHTML += `<div class="item">
+          <img src="./image/item1.png" alt="" />
+          <p class="description">${product.description}</p>
+          <p class="price">$${product.price}</p>
+          <p class="selling">${product.selling}</p>
+          <b class="sale">${product.sale}</b>
+          <p class="discount">${product.discount}</p>
+          <p class="like">${product.like}</p>
+          <button id="${product.id}" class="buy">${product.buy}</button>
+        </div>`;
+          }
+          var carts = [];
+          var cartsJSON = JSON.stringify(carts);
+          if (!localStorage.getItem("carts")) {
+            localStorage.setItem(cartsJSON);
+          }
+          cartsJSON = localStorage.getItem("carts");
+          carts = JSON.parse(cartsJSON);
+
+          var listBuy = document.querySelectorAll(".buy");
+          for (var buy of listBuy) {
+            buy.addEventListener("click", function () {
+              var idProduct = buy.getAttribute("id");
+              carts.push(idProduct);
+            });
+          }
+        </script>
+      </div>
+
+      <div class="sectionRight">
+        <div class="circle">
+          <div class="hour"></div>
+          <div class="second"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

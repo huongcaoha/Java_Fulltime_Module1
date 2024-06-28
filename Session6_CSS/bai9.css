@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 50%;
+    height: 50vh;
+   
+    background-image: 
+    linear-gradient(to top left, rgb(225, 157, 190), rgb(0, 255, 4) 50%, transparent 50%, transparent 100%),
+    linear-gradient(to top right, rgb(128, 0, 36), rgb(219, 195, 134) 50%, transparent 50%, transparent 100%), 
+    linear-gradient(to bottom right, rgb(218, 168, 76), blue 50%, transparent 50%, transparent 100%),
+    linear-gradient(to bottom left, yellow, rgb(172, 117, 139) 50%, transparent 50%, transparent 100%);
+    margin: 15% auto;
+}
+.sub-container {
+    width: 95%;
+    height: 45vh;
+    position: relative;
+    left: 2.5%;
+    top:2.5vh ;
+    border-radius: 5%;
+    background-color: white;
+    
+}
+.pre {
+    font-size: 50px;
+    position: absolute;
+    top : 45% ;
+    left: 0;
+}
+.next {
+    font-size: 50px;
+    position: absolute;
+    top : 45% ;
+    right: 0;
+}
+.listLabel {
+    display: flex;
+    font-size: 100px;
+    position: absolute;
+    bottom : 5% ;
+    left: 45%;
+}
+.content {
+    text-align: center;
+    display: none;
+    padding-top : 20vh;
+    font-size: 50px;
+}

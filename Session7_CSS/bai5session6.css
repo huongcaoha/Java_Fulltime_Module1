@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f4;
+}
+header {
+    display: flex;
+    background-color: #fefefe;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: space-between;
+    line-height: 4vh;
+}
+
+header .information {
+    display: flex;
+    margin-left: -20%;
+   padding-top: 10px;
+}
+header .information .avatar {
+    display: flex;
+    gap: 10px;
+    
+}
+header .information .avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+   margin-top: -15px;
+    
+}
+
+#logo {
+    width: 50px;
+   margin-left: 3%;
+}
+#search {
+    width: 25%;
+    height: 4vh;
+    background-color: #f6f8fa;
+    margin-left: -5%;
+    border-radius: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+#search i {
+   position: absolute;
+   top : 20% ;
+   right: 5%;
+}
+#search input {
+    width: 100%;
+    border: none;
+    margin-left: -65%;
+}
+.create {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 0 25px ;
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 30px;
+}
+.icon {
+    margin-left: -25%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+i {
+   font-size: 150%;
+
+}
+header .icon i {
+    margin-left: 10%;
+}
+main {
+    width: 100%;
+    background-color: #f6f8fa;
+    display: flex;
+}
+.sectionLeft {
+    flex: 1;
+   display: flex;
+   flex-direction: column;
+  align-items: flex-start;
+  background-color: #f2f2f4;
+  margin-top: 4%;
+}
+.sectionLeft .sub-sectionLeft {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 15px;
+    margin: 30% 25%;
+    
+}
+
+.sectionLeft .sub-sectionLeft li {
+    margin: 10% 0;
+    padding: 10px 0;
+}
+
+.content {
+    flex : 5;
+    background-color: #f6f8fa;
+    margin-left: 2%;
+    
+}
+.content .status {
+    margin-top: 6%;
+    background-color: #ffffff;
+    border: 1px solid #f7f6f9;
+    display: flex;
+    align-items: center;
+    padding: 2% 0;
+    border: 1px solid rgb(205, 198, 198);
+    border-radius: 5px;
+}
+.content .status input {
+    width: 100%;
+    height: 80px;
+    outline: none;
+    border: none;
+}
+.content .status img {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+.content .sub-status {
+    
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border: 1px solid rgb(205, 198, 198);
+    border-radius: 5px;
+}
+
+.content .sub-status h3 {
+    margin-left: 10px;
+}
+.content .sub-status div {
+    display: flex;
+}
+.content .sub-status img{
+    width: 10%;
+}
+.content .sub-status .endelement {
+    position: relative;
+}
+.content .sub-status .endelement h1{
+    position: absolute;
+    right: -60%;
+    bottom : 0% ;
+    font-size: 50px;
+}
+.post {
+    margin: 5% 0;
+    background-color: #fff;
+    border: 1px solid #c3bebe;
+    padding: 2% 2%;
+    border-radius: 5px;
+    position: relative;
+}
+.post .plus {
+    color: #ffffff78;
+    font-size: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    right: 14% ;
+}
+.post .headerPost {
+    display: flex;
+}
+.post .headerPost img {
+    width: 100px;
+    height: 100px;
+    margin-left: -1%;
+}
+.post .headerPost div {
+    margin: 2% 1%;
+}
+.post .headerPost .endElement {
+    position: absolute;
+    right: 1.5%;
+    top : 1% ;
+    font-size: 25px;
+}
+.post .avatarPost {
+    width: 6%;
+    
+    border-radius: 100%;
+    margin: 0 10px;
+}
+.post .contentPost {
+    margin: 2% 0;
+    font-size: 20px;
+}
+.post .imagePost {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+.post .imagePost img {
+    width: 33%;
+    height: 250px;
+    border-radius: 5px;
+}
+.post .likePost {
+    display: flex;
+    gap : 10% ;
+    margin: 5% 1%;
+    margin-bottom: 0;
+}
+.sectionRight {
+    flex : 2 ;
+  
+    padding: 2% 2%;
+}
+.sectionRight .listFriend {
+   border-bottom: 1px solid rgb(209, 204, 204);
+   border-top:1px solid rgb(209, 204, 204) ;
+    padding: 7% 3%;
+    margin-top: 7%;
+  
+}
+.sectionRight .listFriend  .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    font-size: 20px;
+}
+.sectionRight .listFriend  .title a {
+    text-decoration: none;
+}
+
+.sectionRight .listFriend .avatarfriend {
+    display: flex;
+    justify-content: space-around;
+}
+.sectionRight .listFriend .avatarfriend img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.market {
+    border-top:1px solid rgb(209, 204, 204) ;
+   
+    border-bottom: 1px solid rgb(209, 204, 204);
+    border-radius: 5px;
+    padding: 5% 5%;
+    margin: 14% 0;
+}
+.market h3 {
+    font-size: 20px;
+    margin: 5% 2%;
+    margin-top: 0;
+}
+.market .product {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.market .product .div {
+    width: 49%;
+    border: 1px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+.market .product .div img {
+    width: 100%;
+}
+.market .product .div div {
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+    background-color: #fff;
+}
+.market .product .div div h4 {
+    font-size: 20px;
+    line-height: 180%;
+}
+.shop {
+    border-bottom: 1px solid rgb(209, 204, 204);
+    border-top:1px solid rgb(209, 204, 204) ;
+   
+    border-radius: 5px;
+    padding: 5% 5%;
+}
+.shop .title {
+    display: flex;
+    justify-content: space-between;
+}
+.shop img {
+    width: 100%;
+    height: 200px;
+    margin: 5% 0;
+}
+@media (max-width : 1200px){
+    .name , .create ,.home {
+        display: none;
+    }
+    .sectionLeft {
+        display: none;
+    }
+}
+@media (max-width :700px){
+    #search {
+        display: none;
+    }
+    .sectionRight {
+        display: none;
+    }
+}
