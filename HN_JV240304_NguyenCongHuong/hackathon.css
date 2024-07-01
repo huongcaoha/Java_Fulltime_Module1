@@ -364,7 +364,7 @@ main {
                     background-color: white;
                     border: 1px solid rgb(238, 235, 235);
                     box-shadow: 9px 6px 47px -24px rgba(0,0,0,0.47);
-    -webkit-box-shadow: 9px 6px 47px -24px rgba(0,0,0,0.47);
+                    -webkit-box-shadow: 9px 6px 47px -24px rgba(0,0,0,0.47);
                     padding: 30px;
                     .div1 {
                         font-size: 16px;
@@ -398,6 +398,9 @@ main {
                             margin-top: 10px;
                         }
                     }
+                }
+                .item:hover {
+                   animation: hover-project 0.5s 1 linear forwards;
                 }
             }
         }
@@ -772,4 +775,9 @@ footer {
        background-color: pink;
     }
  }
-
+@keyframes hover-project {
+    to {
+        transform: scale(1.1);
+        background-color: pink;
+    }
+}
