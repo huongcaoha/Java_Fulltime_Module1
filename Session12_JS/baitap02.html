@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .square {
+        width: 200px;
+        height: 200px;
+        background-color: #5babe1;
+        margin: 300px 500px;
+        position: relative;
+        transform: rotate(45deg);
+        .circle {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          background-color: #5babe1;
+        }
+        .circle1 {
+          position: absolute;
+          top: -50%;
+        }
+        .circle2 {
+          position: absolute;
+          left: -50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square">
+      <div class="circle1 circle"></div>
+      <div class="circle2 circle"></div>
+    </div>
+
+    <script src="./baitap02.js"></script>
+  </body>
+</html>
