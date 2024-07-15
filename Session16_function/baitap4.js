@@ -146,13 +146,18 @@
 
 // bài 7
 
-function leapYear(year) {
-  if (year % 400 == 0) {
-    alert(`${year} is leap year`);
-  } else if (year % 4 == 0 && year % 100 != 0) {
-    alert(`${year} is leap year`);
-  } else {
-    alert(`${year} not is leap year`);
-  }
-}
-leapYear(2023);
+// function leapYear(year) {
+//   if (year % 400 == 0) {
+//     alert(`${year} is leap year`);
+//   } else if (year % 4 == 0 && year % 100 != 0) {
+//     alert(`${year} is leap year`);
+//   } else {
+//     alert(`${year} not is leap year`);
+//   }
+// }
+// leapYear(2023);
+
+// let n = +prompt("moi ban nhap vao so n");
+// while (Number.isInteger(n) || n < 0) {
+//   n = +prompt("gia tri khong hop le moi ban nhap lai");
+// }
