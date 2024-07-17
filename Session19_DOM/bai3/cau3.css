@@ -1,0 +1,31 @@
+body {
+    background-color: #98fc98;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 0 15px;
+    margin-top: 300px;
+
+    #square1 {
+        width: 200px;
+        height: 200px;
+        background-color: #f0e68c;
+        border: 1px solid black;
+    }
+
+    #square2 {
+        width: 200px;
+        height: 200px;
+        background-color: #98fc98;
+        border: 1px solid black;
+    }
+
+    #square3 {
+        width: 200px;
+        height: 200px;
+        background-color: #c0c0c0;
+        border: 1px solid black;
+    }
+}
